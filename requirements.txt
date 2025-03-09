@@ -1,2 +1,2 @@
-tkinter
-tk>=8.6 
+Flask==2.3.3
+gunicorn==21.2.0 

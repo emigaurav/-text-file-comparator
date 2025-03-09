@@ -1,0 +1,59 @@
+.code-area {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    resize: vertical;
+}
+
+.diff-line {
+    padding: 2px 5px;
+    margin: 2px 0;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.diff-added {
+    background-color: #e6ffe6;
+    border-left: 3px solid #28a745;
+}
+
+.diff-removed {
+    background-color: #ffe6e6;
+    border-left: 3px solid #dc3545;
+}
+
+.diff-unchanged {
+    background-color: #f8f9fa;
+    border-left: 3px solid #6c757d;
+}
+
+.badge {
+    font-size: 0.9em;
+}
+
+.badge.valid-json {
+    background-color: #28a745;
+}
+
+.badge.invalid-json {
+    background-color: #dc3545;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 10px;
+    }
+    
+    .row {
+        margin-bottom: 15px;
+    }
+    
+    .card {
+        margin-bottom: 15px;
+    }
+    
+    .btn {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+} 
