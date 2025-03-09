@@ -1,0 +1,2 @@
+tkinter
+tk>=8.6 
