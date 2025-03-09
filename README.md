@@ -109,4 +109,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Built with Python and tkinter
 - Uses `difflib` for efficient text comparison
 - Implements memory mapping for large file handling
-- Utilizes threading for responsive UI 
+- Utilizes threading for responsive UI
