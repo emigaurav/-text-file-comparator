@@ -5,7 +5,9 @@ from datetime import datetime
 import os
 
 app = Flask(__name__)
-app.debug = True  # Enable debug mode
+
+# Only enable debug mode in development
+app.debug = os.environ.get('FLASK_ENV') == 'development'
 
 def compare_files(content1, content2):
     """Compare two text contents and return differences"""
@@ -92,4 +94,6 @@ def format_json_endpoint():
     })
 
 if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=5000, debug=True) 
+    # Use environment variables for host and port
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port) 
